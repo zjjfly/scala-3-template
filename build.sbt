@@ -2,7 +2,7 @@
 
 ThisBuild / version := "0.1.0-SNAPSHOT"
 
-ThisBuild / scalaVersion := "3.6.2"
+ThisBuild / scalaVersion := "3.8.2"
 
 val mainClassName = "com.github.zjjfly.bootstrap"
 
@@ -11,7 +11,7 @@ lazy val root = (project in file("."))
   .settings(
     name := "scala-3-template",
     libraryDependencies ++= Seq(
-      "org.specs2" %% "specs2-core" % "5.5.8" % Test
+      "org.specs2" %% "specs2-core" % "5.7.0" % Test
     ),
     idePackagePrefix     := Some("com.github.zjjfly"),
     assembly / mainClass := Some(mainClassName),
